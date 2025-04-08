@@ -1,0 +1,1 @@
+web:  trap '' SIGTERM; node back-end/app.js & npm run --prefix front-end dev & wait -n; kill -SIGTERM -$$; wait
